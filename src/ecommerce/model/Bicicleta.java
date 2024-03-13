@@ -1,4 +1,4 @@
-package produto.model;
+package ecommerce.model;
 
 public  abstract class Bicicleta {
 

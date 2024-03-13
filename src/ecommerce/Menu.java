@@ -1,8 +1,8 @@
-package produto;
+package ecommerce;
 
 import java.util.Scanner;
 
-import produto.util.Cores;
+import ecommerce.util.Cores;
 
 public class Menu {
 

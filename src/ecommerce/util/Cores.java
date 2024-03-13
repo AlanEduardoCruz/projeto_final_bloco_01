@@ -1,4 +1,4 @@
-package produto.util;
+package ecommerce.util;
 
 public class Cores {
 	

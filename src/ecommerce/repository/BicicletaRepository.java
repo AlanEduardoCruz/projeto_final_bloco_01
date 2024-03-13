@@ -1,6 +1,6 @@
-package produto.repository;
+package ecommerce.repository;
 
-import produto.model.Bicicleta;
+import ecommerce.model.Bicicleta;
 
 public interface BicicletaRepository {
 
