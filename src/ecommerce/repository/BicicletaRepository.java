@@ -12,6 +12,8 @@ public interface BicicletaRepository {
 
 	public void atualizar(Bicicleta bicicleta);
 
-	public void deletar(String modelo);
+	public void deletar(int numero);
+	
+	
 
 }

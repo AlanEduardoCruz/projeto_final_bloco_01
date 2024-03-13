@@ -1,23 +1,29 @@
 package ecommerce.model;
 
-public  abstract class Bicicleta {
+public class Bicicleta {
 
+	private int numero;
 	private String marca;
-	private String modelo;
 	private String tipo;
-	private String tamanhoQuadro;
 	private String cor;
 	private double preco;
 
-	public  Bicicleta(String marca, String modelo, String tipo, String tamanhoQuadro, String cor, double preco) {
-		
+	public Bicicleta(int numero, String marca, String tipo, String cor, double preco) {
+
+		this.numero = numero;
 		this.marca = marca;
-		this.modelo = modelo;
 		this.tipo = tipo;
-		this.tamanhoQuadro = tamanhoQuadro;
 		this.cor = cor;
 		this.preco = preco;
-		
+
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 	public String getMarca() {
@@ -28,28 +34,12 @@ public  abstract class Bicicleta {
 		this.marca = marca;
 	}
 
-	public String getModelo() {
-		return modelo;
-	}
-
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
 	public String getTipo() {
 		return tipo;
 	}
 
 	public void setTipo(String tipo) {
 		this.tipo = tipo;
-	}
-
-	public String getTamanhoQuadro() {
-		return tamanhoQuadro;
-	}
-
-	public void setTamanhoQuadro(String tamanhoQuadro) {
-		this.tamanhoQuadro = tamanhoQuadro;
 	}
 
 	public String getCor() {
@@ -67,10 +57,19 @@ public  abstract class Bicicleta {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
-	
 
-	
+	public void visualizar() {
 
-	
+		System.out.println("\n**************************************************");
+		System.out.println("Dados da Conta:");
+		System.out.println("****************************************************");
+		System.out.println("Numero: " + this.numero);		
+		System.out.println("Marca: " + this.marca);
+		System.out.println("Tipo: " + this.tipo);
+		System.out.println("Cor: " + this.cor);
+		System.out.println("Preco: " + this.preco);
+		
+		
+	}
 
 }
